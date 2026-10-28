@@ -9,17 +9,15 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
 
   <!-- Estilos da página -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="shell" id="inicio">
-  <div class="topline"><span>Uma casa para a arte de agora</span><span>São Paulo · Brasil <span class="dot">●</span></span></div>
+  <div class="topline"><span>PROJETO INTEGRADOR DE LINGUAGENS - GALERIA DE ARTES</span><span>Mossoró · Rio Grande do Norte <span class="dot">●</span></span></div>
   <header>
-    <a class="brand" href="#inicio" aria-label="Lume — início"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span><span><strong>lume</strong><small>galeria de arte</small></span></a>
-    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+     <img src="img/Senac_logo.png" alt="Logo do SENAC">
     <nav class="nav" id="nav" aria-label="Navegação principal"><a href="#obras">Obras</a><a href="#artistas">Artistas</a><a href="#agenda">Exposições</a><a href="#sobre">A galeria</a><a class="nav-contact" href="#contato">Contato ↗</a></nav>
   </header>
   <main>
@@ -36,25 +34,22 @@
       </div>
     </section>
 
-    <div class="intro">
-      <span class="num">01</span>
-      <p>Acreditamos na arte como espaço de desaceleração. Um convite para pausar, reparar nos detalhes e reencontrar o espanto diante do cotidiano.</p>
-      <a href="#sobre" aria-label="Sobre a galeria">→</a>
-    </div>
-
     <section class="works pad" id="obras" aria-labelledby="works-title">
       <div class="section-heading">
         <div><p class="eyebrow">Acervo &amp; Seleção</p><h2 id="works-title">Obras em <em>exibição.</em></h2></div>
         <p class="section-aside">Pintura, escultura, fotografia e novas mídias. Obras disponíveis para aquisição e visitação.</p>
       </div>
         <div class="selects">
-          <select id="selectArtist" aria-label="Filtrar por artista">
-            <option value="all">Todos os artistas</option>
-            <option value="lucia-fonseca">Lúcia Fonseca</option>
-            <option value="mateus-pinto">Mateus Pinto</option>
-            <option value="bruna-veloso">Bruna Veloso</option>
-            <option value="andre-santos">André Santos</option>
-          </select>
+<select id="selectArtist" aria-label="Filtrar por artista">
+  <option value="all">Todos os artistas</option>
+  <option value="andre-luis">André Luis</option>
+  <option value="antonio-lucas">Antonio Lucas</option>
+  <option value="erick-felipe">Erick Felipe</option>
+  <option value="jonas-gomes">Jonas Gomes</option>
+  <option value="paula-milena">Paula Milena</option>
+  <option value="rafael-dias">Rafael Dias</option>
+  <option value="samuel-reboucas">Samuel Rebouças</option>
+</select>
           <select id="selectStatus" aria-label="Filtrar por disponibilidade">
             <option value="all">Disponibilidade</option>
             <option value="disponivel">Disponível</option>
@@ -131,80 +126,64 @@
       </div>
     </section>
 
-    <section class="artists pad" id="artistas" aria-labelledby="artists-title">
-      <div class="artists-intro">
-        <p class="eyebrow light-eyebrow">Representados</p>
-        <h2 id="artists-title">Vozes que moldam o <em>agora.</em></h2>
-        <p>A Galeria Lume representa um núcleo diversificado de artistas visuais cujas práticas transitam entre a tradição dos materiais e a pesquisa conceitual contemporânea.</p>
-      </div>
+<section class="artists pad" id="artistas" aria-labelledby="artists-title">
+  <div class="artists-intro">
+    <p class="eyebrow light-eyebrow">Representados</p>
+    <h2 id="artists-title">ALUNOS ENVOLVIDOS<em>NO PROJETO.</em></h2>  </div>
 
-      <div class="artist-list">
-        <div class="artist-row">
-          <span class="artist-count">01</span>
-          <span class="artist-initial tone-blue">LF</span>
-          <div class="artist-name">Lúcia Fonseca <small>Pintura &amp; Mídia Mista · São Paulo</small></div>
-          <span class="artist-arrow">↗</span>
-        </div>
-        <div class="artist-row">
-          <span class="artist-count">02</span>
-          <span class="artist-initial tone-rust">MP</span>
-          <div class="artist-name">Mateus Pinto <small>Escultura &amp; Instalação · Rio de Janeiro</small></div>
-          <span class="artist-arrow">↗</span>
-        </div>
-        <div class="artist-row">
-          <span class="artist-count">03</span>
-          <span class="artist-initial tone-green">BV</span>
-          <div class="artist-name">Bruna Veloso <small>Fotografia &amp; Vídeo · Belo Horizonte</small></div>
-          <span class="artist-arrow">↗</span>
-        </div>
-        <div class="artist-row">
-          <span class="artist-count">04</span>
-          <span class="artist-initial tone-blue">AS</span>
-          <div class="artist-name">André Santos <small>Instalações Luminosas · Curitiba</small></div>
-          <span class="artist-arrow">↗</span>
-        </div>
-      </div>
-    </section>
 
-          <article class="event">
-            <div class="date"><strong>15</strong><span>DEZ / 26</span></div>
-            <div class="event-copy">
-              <span class="status">Programado</span>
-              <h3>Finissage &amp; Lançamento do Catálogo 2026</h3>
-              <p>Encerramento do ano com exibição especial de obras inéditas e sessão de autógrafos do novo livro do acervo.</p>
-              <div class="event-time">18h00 — 21h00 · Entrada livre</div>
-            </div>
-            <span class="artist-arrow">↗</span>
-          </article>
-        </div>
-      </div>
-      <p class="demo-note">* Horários sujeitos a alterações sem aviso prévio.</p>
-    </section>
-
-<!-- Modal Detalhe da Obra -->
-<dialog id="workModal" aria-labelledby="modalTitle">
-  <div class="modal-layout">
-    <img class="modal-photo" id="modalImg" src="" alt="">
-    <div class="modal-copy">
-      <button class="modal-close" id="modalCloseBtn" aria-label="Fechar janela modal">✕</button>
-      <h2 id="modalTitle">Título da Obra</h2>
-      <div class="modal-artist" id="modalArtist">Nome do Artista</div>
-      <p class="modal-desc" id="modalDesc">Descrição técnica e conceitual da obra detalhada aqui.</p>
-      
-      <dl class="specs">
-        <div><dt>Ano</dt><dd id="modalYear">2026</dd></div>
-        <div><dt>Técnica</dt><dd id="modalTech">Técnica</dd></div>
-        <div><dt>Dimensões</dt><dd id="modalDims">00 × 00 cm</dd></div>
-        <div><dt>Status</dt><dd id="modalStatus">Disponível</dd></div>
-      </dl>
-
-      <div class="modal-interest">
-        <span id="modalPrice">Sob consulta</span>
-        <a class="text-link" href="#contato" id="modalContactLink" style="color:white; border-color:white;">Tenho interesse ↗</a>
-      </div>
+  <div class="artist-list">
+    <div class="artist-row">
+      <span class="artist-count">01</span>
+      <span class="artist-initial tone-blue">AL</span>
+      <div class="artist-name">André Luis <small>Pintura &amp; Mídia Mista · São Paulo</small></div>
+      <span class="artist-arrow">↗</span>
+    </div>
+    <div class="artist-row">
+      <span class="artist-count">02</span>
+      <span class="artist-initial tone-rust">AL</span>
+      <div class="artist-name">Antonio Lucas <small>Escultura &amp; Instalação · Rio de Janeiro</small></div>
+      <span class="artist-arrow">↗</span>
+    </div>
+    <div class="artist-row">
+      <span class="artist-count">03</span>
+      <span class="artist-initial tone-green">EF</span>
+      <div class="artist-name">Erick Felipe <small>Fotografia &amp; Vídeo · Belo Horizonte</small></div>
+      <span class="artist-arrow">↗</span>
+    </div>
+    <div class="artist-row">
+      <span class="artist-count">04</span>
+      <span class="artist-initial tone-blue">HJ</span>
+      <div class="artist-name">Heitor Jorge <small>Pintura &amp; Desenho · Recife</small></div>
+      <span class="artist-arrow">↗</span>
+    </div>
+    <div class="artist-row">
+      <span class="artist-count">05</span>
+      <span class="artist-initial tone-rust">JG</span>
+      <div class="artist-name">Jonas Gomes <small>Instalações Luminosas · Curitiba</small></div>
+      <span class="artist-arrow">↗</span>
+    </div>
+    <div class="artist-row">
+      <span class="artist-count">06</span>
+      <span class="artist-initial tone-green">PM</span>
+      <div class="artist-name">Paula Milena <small>Arte Digital &amp; Novas Mídias · Salvador</small></div>
+      <span class="artist-arrow">↗</span>
+    </div>
+    <div class="artist-row">
+      <span class="artist-count">07</span>
+      <span class="artist-initial tone-blue">RD</span>
+      <div class="artist-name">Rafael Dias <small>Gravura &amp; Desenho · Porto Alegre</small></div>
+      <span class="artist-arrow">↗</span>
+    </div>
+    <div class="artist-row">
+      <span class="artist-count">08</span>
+      <span class="artist-initial tone-rust">SR</span>
+      <div class="artist-name">Samuel Rebouças <small>Cerâmica &amp; Objeto · Brasília</small></div>
+      <span class="artist-arrow">↗</span>
     </div>
   </div>
-</dialog>
+</section>
+</section>
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
