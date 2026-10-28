@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f0e8">
+  
+   <title>Galeria Lume — arte para olhar de novo</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+
+  <!-- Estilos da página -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell" id="inicio">
+  <div class="topline"><span>Uma casa para a arte de agora</span><span>São Paulo · Brasil <span class="dot">●</span></span></div>
+  <header>
+    <a class="brand" href="#inicio" aria-label="Lume — início"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span><span><strong>lume</strong><small>galeria de arte</small></span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav" aria-label="Navegação principal"><a href="#obras">Obras</a><a href="#artistas">Artistas</a><a href="#agenda">Exposições</a><a href="#sobre">A galeria</a><a class="nav-contact" href="#contato">Contato ↗</a></nav>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow">Arte para sentir de perto</p><h1 id="hero-title">Um lugar para<br>olhar <em>de novo.</em></h1><p class="hero-intro">Arte contemporânea, encontros inesperados e novas formas de ver o mundo. Entre, fique à vontade.</p><a class="text-link" href="#obras">Explore a galeria <span>↘</span></a><div class="hero-index"><span>01 — 04</span><span>Seleção da casa · 2026</span></div></div>
+      <div class="hero-art">
+        <!-- ATENÇÃO: troque o src abaixo pela sua imagem (arquivo ou o data:image/webp;base64 original) -->
+        <div class="hero-img-frame"><img class="hero-img" src="img/hero.webp" alt="Obra em destaque na Galeria Lume"></div>
+        <div class="featured">
+          <div><span class="caption-label">Em Destaque</span><h2>Geometria do Vazio</h2><p>Lúcia Fonseca · 2025</p></div>
+          <a class="round-link" href="#obras" aria-label="Ver obra em destaque">↗</a>
+        </div>
+        <span class="side-note">EXPOSIÇÃO ATUAL</span>
+      </div>
+    </section>
+
+    <div class="intro">
+      <span class="num">01</span>
+      <p>Acreditamos na arte como espaço de desaceleração. Um convite para pausar, reparar nos detalhes e reencontrar o espanto diante do cotidiano.</p>
+      <a href="#sobre" aria-label="Sobre a galeria">→</a>
+    </div>
+
+    <section class="works pad" id="obras" aria-labelledby="works-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Acervo &amp; Seleção</p><h2 id="works-title">Obras em <em>exibição.</em></h2></div>
+        <p class="section-aside">Pintura, escultura, fotografia e novas mídias. Obras disponíveis para aquisição e visitação.</p>
+      </div>
+        <div class="selects">
+          <select id="selectArtist" aria-label="Filtrar por artista">
+            <option value="all">Todos os artistas</option>
+            <option value="lucia-fonseca">Lúcia Fonseca</option>
+            <option value="mateus-pinto">Mateus Pinto</option>
+            <option value="bruna-veloso">Bruna Veloso</option>
+            <option value="andre-santos">André Santos</option>
+          </select>
+          <select id="selectStatus" aria-label="Filtrar por disponibilidade">
+            <option value="all">Disponibilidade</option>
+            <option value="disponivel">Disponível</option>
+            <option value="colecao">Coleção privada</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid" id="worksGrid">
+        <article class="card" data-category="pintura" data-artist="lucia-fonseca" data-status="disponivel" data-year="2025" data-tech="Óleo sobre tela" data-dims="120 × 90 cm" data-price="Sob consulta" data-img="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80" data-desc="Composição geométrica abstrata explorando o silêncio visual e as gradações da luz sobre superfícies texturizadas.">
+          <div class="card-img-wrap">
+            <img class="card-img" src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80" alt="Geometria do Vazio - Lúcia Fonseca" loading="lazy">
+            <span class="open-pill">↗</span>
+          </div>
+          <div class="card-meta"><span>Pintura · 2025</span><span>Disponível</span></div>
+          <h3>Geometria do Vazio</h3>
+          <p>Lúcia Fonseca</p>
+        </article>
+
+        <article class="card" data-category="escultura" data-artist="mateus-pinto" data-status="disponivel" data-year="2024" data-tech="Bronze e cerâmica" data-dims="45 × 30 × 25 cm" data-price="Sob consulta" data-img="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80" data-desc="Escultura orgânica tridimensional que desafia o equilíbrio e a gravidade com volumes conectados.">
+          <div class="card-img-wrap">
+            <img class="card-img" src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80" alt="Sussurros de Pedra - Mateus Pinto" loading="lazy">
+            <span class="open-pill">↗</span>
+          </div>
+          <div class="card-meta"><span>Escultura · 2024</span><span>Disponível</span></div>
+          <h3>Sussurros de Pedra</h3>
+          <p>Mateus Pinto</p>
+        </article>
+
+        <article class="card" data-category="fotografia" data-artist="bruna-veloso" data-status="colecao" data-year="2025" data-tech="Impressão Fine Art Pigmento Mineral" data-dims="100 × 150 cm" data-price="Coleção Privada" data-img="https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=800&q=80" data-desc="Série fotográfica poética capturando reflexos urbanos efêmeros e a efemeridade do tempo.">
+          <div class="card-img-wrap">
+            <img class="card-img" src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=800&q=80" alt="Luz Suspensa - Bruna Veloso" loading="lazy">
+            <span class="open-pill">↗</span>
+          </div>
+          <div class="card-meta"><span>Fotografia · 2025</span><span>Coleção Privada</span></div>
+          <h3>Luz Suspensa</h3>
+          <p>Bruna Veloso</p>
+        </article>
+
+        <article class="card" data-category="instalacao" data-artist="andre-santos" data-status="disponivel" data-year="2026" data-tech="Madeira, vidro e luz LED" data-dims="Dimensões variáveis" data-price="Sob consulta" data-img="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=800&q=80" data-desc="Instalação imersiva com luzes direcionais que reinterpretam espaços arquitetônicos e sombras.">
+          <div class="card-img-wrap">
+            <img class="card-img" src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=800&q=80" alt="Horizontes Paralelos - André Santos" loading="lazy">
+            <span class="open-pill">↗</span>
+          </div>
+          <div class="card-meta"><span>Instalação · 2026</span><span>Disponível</span></div>
+          <h3>Horizontes Paralelos</h3>
+          <p>André Santos</p>
+        </article>
+
+        <article class="card" data-category="pintura" data-artist="lucia-fonseca" data-status="colecao" data-year="2024" data-tech="Acrílica e carvão sobre tela" data-dims="140 × 110 cm" data-price="Coleção Privada" data-img="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80" data-desc="Pintura gestual expressiva que combina camadas vibrantes de tinta acrílica com traços firmes de carvão.">
+          <div class="card-img-wrap">
+            <img class="card-img" src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80" alt="Memórias de Vidro - Lúcia Fonseca" loading="lazy">
+            <span class="open-pill">↗</span>
+          </div>
+          <div class="card-meta"><span>Pintura · 2024</span><span>Coleção Privada</span></div>
+          <h3>Memórias de Vidro</h3>
+          <p>Lúcia Fonseca</p>
+        </article>
+
+        <article class="card" data-category="fotografia" data-artist="bruna-veloso" data-status="disponivel" data-year="2026" data-tech="Impressão Analógica Prata Gelatina" data-dims="80 × 60 cm" data-price="Sob consulta" data-img="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80" data-desc="Estudo analógico em preto e branco focado na arquitetura paulistana e em suas sombras angulares.">
+          <div class="card-img-wrap">
+            <img class="card-img" src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80" alt="Sombra & Geometria - Bruna Veloso" loading="lazy">
+            <span class="open-pill">↗</span>
+          </div>
+          <div class="card-meta"><span>Fotografia · 2026</span><span>Disponível</span></div>
+          <h3>Sombra &amp; Geometria</h3>
+          <p>Bruna Veloso</p>
+        </article>
+      </div>
+
+      <div class="works-foot">
+        <span id="worksCount">Exibindo 6 de 6 obras</span>
+        <span>Catálogo atualizado em Outubro de 2026</span>
+      </div>
+    </section>
+
+    <section class="artists pad" id="artistas" aria-labelledby="artists-title">
+      <div class="artists-intro">
+        <p class="eyebrow light-eyebrow">Representados</p>
+        <h2 id="artists-title">Vozes que moldam o <em>agora.</em></h2>
+        <p>A Galeria Lume representa um núcleo diversificado de artistas visuais cujas práticas transitam entre a tradição dos materiais e a pesquisa conceitual contemporânea.</p>
+      </div>
+
+      <div class="artist-list">
+        <div class="artist-row">
+          <span class="artist-count">01</span>
+          <span class="artist-initial tone-blue">LF</span>
+          <div class="artist-name">Lúcia Fonseca <small>Pintura &amp; Mídia Mista · São Paulo</small></div>
+          <span class="artist-arrow">↗</span>
+        </div>
+        <div class="artist-row">
+          <span class="artist-count">02</span>
+          <span class="artist-initial tone-rust">MP</span>
+          <div class="artist-name">Mateus Pinto <small>Escultura &amp; Instalação · Rio de Janeiro</small></div>
+          <span class="artist-arrow">↗</span>
+        </div>
+        <div class="artist-row">
+          <span class="artist-count">03</span>
+          <span class="artist-initial tone-green">BV</span>
+          <div class="artist-name">Bruna Veloso <small>Fotografia &amp; Vídeo · Belo Horizonte</small></div>
+          <span class="artist-arrow">↗</span>
+        </div>
+        <div class="artist-row">
+          <span class="artist-count">04</span>
+          <span class="artist-initial tone-blue">AS</span>
+          <div class="artist-name">André Santos <small>Instalações Luminosas · Curitiba</small></div>
+          <span class="artist-arrow">↗</span>
+        </div>
+      </div>
+    </section>
+
+          <article class="event">
+            <div class="date"><strong>15</strong><span>DEZ / 26</span></div>
+            <div class="event-copy">
+              <span class="status">Programado</span>
+              <h3>Finissage &amp; Lançamento do Catálogo 2026</h3>
+              <p>Encerramento do ano com exibição especial de obras inéditas e sessão de autógrafos do novo livro do acervo.</p>
+              <div class="event-time">18h00 — 21h00 · Entrada livre</div>
+            </div>
+            <span class="artist-arrow">↗</span>
+          </article>
+        </div>
+      </div>
+      <p class="demo-note">* Horários sujeitos a alterações sem aviso prévio.</p>
+    </section>
+
+<!-- Modal Detalhe da Obra -->
+<dialog id="workModal" aria-labelledby="modalTitle">
+  <div class="modal-layout">
+    <img class="modal-photo" id="modalImg" src="" alt="">
+    <div class="modal-copy">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Fechar janela modal">✕</button>
+      <h2 id="modalTitle">Título da Obra</h2>
+      <div class="modal-artist" id="modalArtist">Nome do Artista</div>
+      <p class="modal-desc" id="modalDesc">Descrição técnica e conceitual da obra detalhada aqui.</p>
+      
+      <dl class="specs">
+        <div><dt>Ano</dt><dd id="modalYear">2026</dd></div>
+        <div><dt>Técnica</dt><dd id="modalTech">Técnica</dd></div>
+        <div><dt>Dimensões</dt><dd id="modalDims">00 × 00 cm</dd></div>
+        <div><dt>Status</dt><dd id="modalStatus">Disponível</dd></div>
+      </dl>
+
+      <div class="modal-interest">
+        <span id="modalPrice">Sob consulta</span>
+        <a class="text-link" href="#contato" id="modalContactLink" style="color:white; border-color:white;">Tenho interesse ↗</a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // 1. MENU MOBILE
+    const menuBtn = document.getElementById('menuBtn');
+    const nav = document.getElementById('nav');
+
+    if (menuBtn && nav) {
+      menuBtn.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        menuBtn.setAttribute('aria-expanded', isOpen);
+        menuBtn.textContent = isOpen ? '✕' : '☰';
+      });
+
+      nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          nav.classList.remove('open');
+          menuBtn.setAttribute('aria-expanded', 'false');
+          menuBtn.textContent = '☰';
+        });
+      });
+    }
+  });
