@@ -266,3 +266,192 @@ img {
         transition-duration: .01ms !important;
     }
 }
+
+/* ==========================================
+   GALERIA LUME — SEÇÃO DE OBRAS
+   DESIGN PROFISSIONAL
+========================================== */
+
+#obras {
+    padding: 75px 7%;
+    background: #f5f1e8;
+}
+
+/* FILTRO */
+#obras .filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0 20px;
+    padding: 15px 0;
+    border-top: 1px solid #d5cfc2;
+    border-bottom: 1px solid #d5cfc2;
+}
+
+#obras #selectArtist {
+    min-width: 210px;
+    padding: 12px 18px;
+    color: #1c2b3b;
+    background: #ebe5d9;
+    border: 1px solid #cfc6b7;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#obras #selectArtist:hover {
+    border-color: #235b9a;
+}
+
+/* GRADE DE OBRAS */
+#obras #worksGrid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    padding-top: 20px;
+}
+
+/* CARTÕES */
+#obras #worksGrid .card {
+    min-width: 0;
+    cursor: pointer;
+    transition: transform .35s ease;
+}
+
+#obras #worksGrid .card:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGENS */
+#obras #worksGrid .card-img-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    border-radius: 9px;
+    background: #e4ded2;
+    box-shadow: 0 5px 18px rgba(28, 43, 59, .08);
+}
+
+#obras #worksGrid .card-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .6s ease;
+}
+
+#obras #worksGrid .card:hover .card-img {
+    transform: scale(1.06);
+}
+
+/* BOTÃO DA IMAGEM */
+#obras #worksGrid .open-pill {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f1e8;
+    color: #1c2b3b;
+    border-radius: 50%;
+    transition: .3s ease;
+}
+
+#obras #worksGrid .card:hover .open-pill {
+    background: #235b9a;
+    color: white;
+    transform: rotate(45deg);
+}
+
+/* CATEGORIA E ANO */
+#obras #worksGrid .card-meta {
+    margin: 15px 0 8px;
+    color: #77756e;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* TÍTULO DA OBRA */
+#obras #worksGrid .card h3 {
+    margin: 0 0 7px;
+    color: #172d48;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+/* NOME DO ARTISTA */
+#obras #worksGrid .card > p {
+    margin: 0;
+    color: #68665f;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 15px;
+    font-style: italic;
+}
+
+/* RODAPÉ DA GALERIA */
+#obras .works-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+    padding-top: 15px;
+    border-top: 1px solid #d5cfc2;
+}
+
+/* TABLETS */
+@media (max-width: 1000px) {
+    #obras #worksGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px 20px;
+    }
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+    #obras {
+        padding: 50px 5%;
+    }
+
+    #obras #worksGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px 13px;
+    }
+
+    #obras #worksGrid .card h3 {
+        font-size: 18px;
+    }
+
+    #obras #worksGrid .card > p {
+        font-size: 13px;
+    }
+
+    #obras #worksGrid .card-meta {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    #obras #selectArtist {
+        width: 100%;
+    }
+
+    #obras .works-foot {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+/* CELULARES PEQUENOS */
+@media (max-width: 370px) {
+    #obras #worksGrid {
+        grid-template-columns: 1fr;
+    }
+}
