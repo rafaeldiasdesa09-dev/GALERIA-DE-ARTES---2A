@@ -50,3 +50,89 @@ header img {
   width: auto;       /* Mantém a proporção original do logo */
   object-fit: contain;
 }
+
+
+/* =====================================
+   FILTRO DE ARTISTAS - GALERIA LUME
+===================================== */
+
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 18px 0 24px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(45, 42, 36, 0.12);
+}
+
+/* Campo de seleção */
+
+#selectArtist {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    min-width: 190px;
+    padding: 12px 42px 12px 16px;
+
+    background-color: #ebe7dd;
+    color: #37352f;
+
+    border: 1px solid rgba(55, 53, 47, 0.20);
+    border-radius: 3px;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+
+    cursor: pointer;
+    outline: none;
+
+    /* Seta personalizada */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%235c594f' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+
+    transition: 
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+
+#selectArtist:hover {
+    background-color: #e4dfd3;
+    border-color: rgba(55, 53, 47, 0.40);
+}
+
+/* Efeito ao selecionar */
+
+#selectArtist:focus {
+    border-color: #8d7960;
+    box-shadow: 0 0 0 3px rgba(141, 121, 96, 0.12);
+}
+
+/* Opções do menu */
+
+#selectArtist option {
+    background-color: #f3f0e8;
+    color: #37352f;
+    padding: 10px;
+}
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+    .filters {
+        padding: 14px 0 20px;
+    }
+
+    #selectArtist {
+        width: 100%;
+        max-width: 260px;
+        font-size: 13px;
+    }
+}

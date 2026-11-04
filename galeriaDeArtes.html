@@ -1,45 +1,65 @@
+
 <!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f3f0e8">
+
   <title>Galeria Lume — arte para olhar de novo</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
 
 <div class="shell" id="inicio">
+
   <div class="topline">
     <span>PROJETO INTEGRADOR DE LINGUAGENS - GALERIA DE ARTES</span>
     <span>Mossoró · Rio Grande do Norte <span class="dot">●</span></span>
   </div>
-  
+
   <header>
-    <img src="img/Senac_logo.png" alt="Logo do SENAC">
-    <button id="menuBtn" class="menu-btn" aria-expanded="false" aria-label="Abrir menu">☰</button>
+    <img src="img/logosenacfercormerciosesc.png" alt="Logo do SENAC">
+
+    <button id="menuBtn" class="menu-btn"
+      aria-expanded="false"
+      aria-label="Abrir menu">☰</button>
+
     <nav class="nav" id="nav" aria-label="Navegação principal">
       <a href="#obras">Obras</a>
       <a href="#artistas">Artistas</a>
-      <a href="#sobre">A galeria</a>
     </nav>
   </header>
 
   <main>
 
+    <!-- Título principal -->
+    <section class="artists pad" id="inicio-artistas"
+      aria-labelledby="main-title">
 
-<!-- Título principal adicionado -->
-    <div style="padding: 2rem 0 1rem 0; text-align: center;">
-      <h1 style="font-size: 1.8rem; font-weight: bold;">Galeria de Arte MEDIOTEC SENAC 2° ANO MATUTINO</h1>
-      <p>auuauauauauauuauauauauauuaua</p>
-    </div>
+      <div class="artists-intro">
+        <p class="eyebrow light-eyebrow">Galeria de Arte</p>
 
-    <!-- Seção de Filtros e Obras -->
+        <h2 id="main-title">
+          MEDIOTEC SENAC 2° ANO <em>MATUTINO</em>
+        </h2>
+      </div>
+
+    </section>
+
+    <!-- Filtros e obras -->
     <section class="pad" id="obras">
+
       <div class="filters">
+
         <select id="selectArtist" aria-label="Filtrar por artista">
+
           <option value="all">Todos os artistas</option>
           <option value="andre-luis">André Luis</option>
           <option value="antonio-lucas">Antonio Lucas</option>
@@ -49,100 +69,226 @@
           <option value="paula-milena">Paula Milena</option>
           <option value="rafael-dias">Rafael Dias</option>
           <option value="samuel-reboucas">Samuel Rebouças</option>
+
         </select>
+
       </div>
 
       <div class="grid" id="worksGrid">
-        <article class="card" data-category="pintura" data-artist="heitor-jorge" data-year="2025">
+
+        <article class="card"
+          data-category="pintura"
+          data-artist="heitor-jorge"
+          data-year="2025">
+
           <div class="card-img-wrap">
-            <img class="card-img" src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80" alt="Geometria do Vazio" loading="lazy">
+            <img class="card-img"
+              src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80"
+              alt="Geometria do Vazio"
+              loading="lazy">
+
             <span class="open-pill">↗</span>
           </div>
-          <div class="card-meta"><span>Pintura · 2025</span></div>
+
+          <div class="card-meta">
+            <span>Pintura · 2025</span>
+          </div>
+
           <h3>Geometria do Vazio</h3>
           <p>Heitor Jorge</p>
+
         </article>
 
-        <article class="card" data-category="escultura" data-artist="antonio-lucas" data-year="2024">
+        <article class="card"
+          data-category="escultura"
+          data-artist="antonio-lucas"
+          data-year="2024">
+
           <div class="card-img-wrap">
-            <img class="card-img" src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80" alt="Sussurros de Pedra" loading="lazy">
+            <img class="card-img"
+              src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80"
+              alt="Sussurros de Pedra"
+              loading="lazy">
+
             <span class="open-pill">↗</span>
           </div>
-          <div class="card-meta"><span>Escultura · 2024</span></div>
+
+          <div class="card-meta">
+            <span>Escultura · 2024</span>
+          </div>
+
           <h3>Sussurros de Pedra</h3>
           <p>Antonio Lucas</p>
+
         </article>
 
-        <article class="card" data-category="fotografia" data-artist="erick-felipe" data-year="2025">
+        <article class="card"
+          data-category="fotografia"
+          data-artist="erick-felipe"
+          data-year="2025">
+
           <div class="card-img-wrap">
-            <img class="card-img" src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=800&q=80" alt="Luz Suspensa" loading="lazy">
+            <img class="card-img"
+              src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=800&q=80"
+              alt="Luz Suspensa"
+              loading="lazy">
+
             <span class="open-pill">↗</span>
           </div>
-          <div class="card-meta"><span>Fotografia · 2025</span></div>
+
+          <div class="card-meta">
+            <span>Fotografia · 2025</span>
+          </div>
+
           <h3>Luz Suspensa</h3>
           <p>Erick Felipe</p>
+
         </article>
 
-        <article class="card" data-category="instalacao" data-artist="jonas-gomes" data-year="2026">
+        <article class="card"
+          data-category="instalacao"
+          data-artist="jonas-gomes"
+          data-year="2026">
+
           <div class="card-img-wrap">
-            <img class="card-img" src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=800&q=80" alt="Horizontes Paralelos" loading="lazy">
+            <img class="card-img"
+              src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=800&q=80"
+              alt="Horizontes Paralelos"
+              loading="lazy">
+
             <span class="open-pill">↗</span>
           </div>
-          <div class="card-meta"><span>Instalação · 2026</span></div>
+
+          <div class="card-meta">
+            <span>Instalação · 2026</span>
+          </div>
+
           <h3>Horizontes Paralelos</h3>
           <p>Jonas Gomes</p>
+
         </article>
+
       </div>
 
       <div class="works-foot">
         <span id="worksCount">Exibindo 4 de 4 obras</span>
         <span>Catálogo atualizado em Outubro de 2026</span>
       </div>
+
     </section>
 
-    <!-- Seção de Artistas -->
-    <section class="artists pad" id="artistas" aria-labelledby="artists-title">
+    <!-- Seção de artistas -->
+    <section class="artists pad" id="artistas"
+      aria-labelledby="artists-title">
+
       <div class="artists-intro">
         <p class="eyebrow light-eyebrow">Representados</p>
-        <h2 id="artists-title">ALUNOS ENVOLVIDOS <em>NO PROJETO.</em></h2>
+
+        <h2 id="artists-title">
+          ALUNOS ENVOLVIDOS <em>NO PROJETO.</em>
+        </h2>
       </div>
 
       <div class="artist-list">
-        <div class="artist-row"><span class="artist-count">01</span><span class="artist-initial tone-blue">AL</span><div class="artist-name">André Luis <small>Pintura &amp; Mídia Mista · São Paulo</small></div><span class="artist-arrow">↗</span></div>
-        <div class="artist-row"><span class="artist-count">02</span><span class="artist-initial tone-rust">AL</span><div class="artist-name">Antonio Lucas <small>Escultura &amp; Instalação · Rio de Janeiro</small></div><span class="artist-arrow">↗</span></div>
-        <div class="artist-row"><span class="artist-count">03</span><span class="artist-initial tone-green">EF</span><div class="artist-name">Erick Felipe <small>Fotografia &amp; Vídeo · Belo Horizonte</small></div><span class="artist-arrow">↗</span></div>
-        <div class="artist-row"><span class="artist-count">04</span><span class="artist-initial tone-blue">HJ</span><div class="artist-name">Heitor Jorge <small>Pintura &amp; Desenho · Recife</small></div><span class="artist-arrow">↗</span></div>
-        <div class="artist-row"><span class="artist-count">05</span><span class="artist-initial tone-rust">JG</span><div class="artist-name">Jonas Gomes <small>Instalações Luminosas · Curitiba</small></div><span class="artist-arrow">↗</span></div>
-        <div class="artist-row"><span class="artist-count">06</span><span class="artist-initial tone-green">PM</span><div class="artist-name">Paula Milena <small>Arte Digital &amp; Novas Mídias · Salvador</small></div><span class="artist-arrow">↗</span></div>
-        <div class="artist-row"><span class="artist-count">07</span><span class="artist-initial tone-blue">RD</span><div class="artist-name">Rafael Dias <small>Gravura &amp; Desenho · Porto Alegre</small></div><span class="artist-arrow">↗</span></div>
-        <div class="artist-row"><span class="artist-count">08</span><span class="artist-initial tone-rust">SR</span><div class="artist-name">Samuel Rebouças <small>Cerâmica &amp; Objeto · Brasília</small></div><span class="artist-arrow">↗</span></div>
+
+        <div class="artist-row">
+          <span class="artist-count">01</span>
+          <span class="artist-initial tone-blue">AL</span>
+          <div class="artist-name">
+            André Luis
+            <small>Pintura &amp; Mídia Mista · São Paulo</small>
+          </div>
+          <span class="artist-arrow">↗</span>
+        </div>
+
+        <div class="artist-row">
+          <span class="artist-count">02</span>
+          <span class="artist-initial tone-rust">AL</span>
+          <div class="artist-name">
+            Antonio Lucas
+            <small>Escultura &amp; Instalação · Rio de Janeiro</small>
+          </div>
+          <span class="artist-arrow">↗</span>
+        </div>
+
+        <div class="artist-row">
+          <span class="artist-count">03</span>
+          <span class="artist-initial tone-green">EF</span>
+          <div class="artist-name">
+            Erick Felipe
+            <small>Fotografia &amp; Vídeo · Belo Horizonte</small>
+          </div>
+          <span class="artist-arrow">↗</span>
+        </div>
+
+        <div class="artist-row">
+          <span class="artist-count">04</span>
+          <span class="artist-initial tone-blue">HJ</span>
+          <div class="artist-name">
+            Heitor Jorge
+            <small>Pintura &amp; Desenho · Recife</small>
+          </div>
+          <span class="artist-arrow">↗</span>
+        </div>
+
+        <div class="artist-row">
+          <span class="artist-count">05</span>
+          <span class="artist-initial tone-rust">JG</span>
+          <div class="artist-name">
+            Jonas Gomes
+            <small>Instalações Luminosas · Curitiba</small>
+          </div>
+          <span class="artist-arrow">↗</span>
+        </div>
+
+        <div class="artist-row">
+          <span class="artist-count">06</span>
+          <span class="artist-initial tone-green">PM</span>
+          <div class="artist-name">
+            Paula Milena
+            <small>Arte Digital &amp; Novas Mídias · Salvador</small>
+          </div>
+          <span class="artist-arrow">↗</span>
+        </div>
+
+        <div class="artist-row">
+          <span class="artist-count">07</span>
+          <span class="artist-initial tone-blue">RD</span>
+          <div class="artist-name">
+            Rafael Dias
+            <small>Gravura &amp; Desenho · Porto Alegre</small>
+          </div>
+          <span class="artist-arrow">↗</span>
+        </div>
+
+        <div class="artist-row">
+          <span class="artist-count">08</span>
+          <span class="artist-initial tone-rust">SR</span>
+          <div class="artist-name">
+            Samuel Rebouças
+            <small>Cerâmica &amp; Objeto · Brasília</small>
+          </div>
+          <span class="artist-arrow">↗</span>
+        </div>
+
       </div>
+
     </section>
+
   </main>
+
 </div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const menuBtn = document.getElementById('menuBtn');
-    const nav = document.getElementById('nav');
-
-    if (menuBtn && nav) {
-      menuBtn.addEventListener('click', () => {
-        const isOpen = nav.classList.toggle('open');
-        menuBtn.setAttribute('aria-expanded', isOpen);
-        menuBtn.textContent = isOpen ? '✕' : '☰';
-      });
-
-      nav.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-          nav.classList.remove('open');
-          menuBtn.setAttribute('aria-expanded', 'false');
-          menuBtn.textContent = '☰';
-        });
-      });
-    }
-  });
-</script>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
