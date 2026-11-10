@@ -296,7 +296,7 @@
 
       <div class="artist-list">
 
-        <div class="artist-row">
+        <div class="artist-row" data-artist="andre-luis" role="button" tabindex="0">
           <span class="artist-count">01</span>
           <span class="artist-initial tone-blue">AL</span>
           <div class="artist-name">
@@ -306,7 +306,7 @@
           <span class="artist-arrow">↗</span>
         </div>
 
-        <div class="artist-row">
+        <div class="artist-row" data-artist="antonio-lucas" role="button" tabindex="0">
           <span class="artist-count">02</span>
           <span class="artist-initial tone-rust">AL</span>
           <div class="artist-name">
@@ -316,7 +316,7 @@
           <span class="artist-arrow">↗</span>
         </div>
 
-        <div class="artist-row">
+        <div class="artist-row" data-artist="erick-felipe" role="button" tabindex="0">
           <span class="artist-count">03</span>
           <span class="artist-initial tone-green">EF</span>
           <div class="artist-name">
@@ -326,7 +326,7 @@
           <span class="artist-arrow">↗</span>
         </div>
 
-        <div class="artist-row">
+        <div class="artist-row" data-artist="heitor-jorge" role="button" tabindex="0">
           <span class="artist-count">04</span>
           <span class="artist-initial tone-blue">HJ</span>
           <div class="artist-name">
@@ -336,7 +336,7 @@
           <span class="artist-arrow">↗</span>
         </div>
 
-        <div class="artist-row">
+        <div class="artist-row" data-artist="jonas-gomes" role="button" tabindex="0">
           <span class="artist-count">05</span>
           <span class="artist-initial tone-rust">JG</span>
           <div class="artist-name">
@@ -346,7 +346,7 @@
           <span class="artist-arrow">↗</span>
         </div>
 
-        <div class="artist-row">
+        <div class="artist-row" data-artist="paula-milena" role="button" tabindex="0">
           <span class="artist-count">06</span>
           <span class="artist-initial tone-green">PM</span>
           <div class="artist-name">
@@ -356,7 +356,7 @@
           <span class="artist-arrow">↗</span>
         </div>
 
-        <div class="artist-row">
+        <div class="artist-row" data-artist="rafael-dias" role="button" tabindex="0">
           <span class="artist-count">07</span>
           <span class="artist-initial tone-blue">RD</span>
           <div class="artist-name">
@@ -366,7 +366,7 @@
           <span class="artist-arrow">↗</span>
         </div>
 
-        <div class="artist-row">
+        <div class="artist-row" data-artist="samuel-reboucas" role="button" tabindex="0">
           <span class="artist-count">08</span>
           <span class="artist-initial tone-rust">SR</span>
           <div class="artist-name">
@@ -383,6 +383,15 @@
   </main>
 
 </div>
+
+<dialog class="lightbox" id="lightbox" aria-label="Obra ampliada">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">&times;</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="">
+  <div class="lightbox-caption">
+    <strong id="lightboxTitle"></strong>
+    <span id="lightboxArtist"></span>
+  </div>
+</dialog>
 
 </body>
 </html>
